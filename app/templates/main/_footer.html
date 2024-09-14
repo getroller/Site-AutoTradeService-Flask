@@ -1,0 +1,98 @@
+<footer>
+  <div class="container">
+    <div class="row">
+
+
+
+      <!-- Логотип и название компании -->
+      <div class="col-3">
+        <img class="footer-logo" src="{{ url_for('static', filename='img/logo2.svg') }}" alt="logo">
+        <p class="fnormal2" style="padding-top: 25px;">ИП Овчаренко Александр Александрович<br>
+          690037, г. Владивосток, ул. Адмирала Кузнецова, 52Б, стр. 3 ОГРН 332353600060117 ИНН 252415003151
+        </p>
+      </div>
+
+
+
+
+
+      <!-- Меню навигации -->
+      <div class="col-3 fnormal">
+        <div class="footer-menu">
+          <p><a href="{{ url_for('main.index') }}">Главная</a></p>
+          <p><a href="{{ url_for('about.about_page') }}">О нас</a></p>
+          <p><a href="{{ url_for('japan.japan_page') }}">Автомобили из Японии</a></p>
+          <p><a href="{{ url_for('korea.korea_page') }}">Автомобили из Кореи</a></p>
+          <p><a href="{{ url_for('china.china_page') }}">Автомобили из Китая</a></p>
+          <p><a href="static/files/Договор компании Долгов Авто по Японии.pdf" download="Договор компании Долгов Авто по Японии.pdf">Пример договора</a></p>
+        </div>
+      </div>
+
+
+      <!-- Контактная информация -->
+      <div class="col-3 fnormal">
+
+        <button id="showForm" class="back-to-top">Перезвоните мне</button>
+        <div id="contactForm" class="contact-form-container1">
+            <form action="{{ url_for('main.send_email') }}" method="post" class="contact-form1 text-center">
+                <p class="text-center fbold" style="font-size: 24px;">
+                    ПЕРЕЗВОНИТЕ МНЕ
+                </p>
+                <p class="text-center fnormal" style="font-size: 18px;">
+                    Оставьте свои данные и наш менеджер свяжется с вами ближайшее время!
+                </p>
+                <div class="form-group">
+                    <label for="name"></label>
+                    <div class="input-icon">
+                        <i class="icon-pencil"></i>
+                        <input type="text" id="name" name="name" class="form-control" placeholder="Имя" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="number"></label>
+                    <div class="input-icon">
+                        <i class="icon-phone"></i>
+                        <input type="number" id="number" name="number" class="form-control" placeholder="Номер" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="city"></label>
+                    <div class="input-icon">
+                        <i class="icon-location"></i>
+                        <input type="text" id="city" name="city" class="form-control" placeholder="Город" required>
+                    </div>
+                </div>
+
+                <button type="submit" class="getbtn2" style="margin-top: 25px;">Отправить</button>
+            </form>
+        </div> 
+
+        <p style="margin-bottom: 15px;"><i class="icon-phone"></i>  8 (914) 090-55-95</p>
+        <p style="margin-bottom: 15px;"><i class="icon-whatsapp"></i>  8 (914) 090-55-95</p>
+        <p><i class="icon-mail"></i> getroller7@gmail.com</p>
+
+        <div style="padding-top: 50px;">
+          <p class="fbold2" style="font-size: 16px;">Ищите нас в социцальных сетях</p>
+          <div class="social-icons">
+            <a href="#"><i class="icon-telegram"></i></a>
+            <a href="#"><i class="icon-youtube-play"></i></a>
+            <a href="#"><i class="icon-whatsapp"></i></a>
+            <a href="#"><i class="icon-instagram"></i></a>
+          </div>
+        </div>
+
+      </div>
+
+
+      <!-- Кнопка вверх и иконки соцсетей -->
+      <div class="col-3">
+          <a href="#" class="back-to-top fnormal" style="text-decoration: none; display: flex; width: 130px;">
+            Наверх
+            <i class="icon-up-open-big" style="padding-left: 15px;"></i>
+          </a>
+      </div>
+    </div>
+  </div>
+</footer>

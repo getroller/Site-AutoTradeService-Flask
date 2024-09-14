@@ -1,0 +1,21 @@
+<div class="container">
+    <div class="row align-items-center justify-content-center">
+        <div class="col-auto">
+            <a href="/">
+                <img class="header__img" src="{{ url_for('static', filename='img/logo2.svg') }}" alt="logo">
+            </a>
+        </div>
+
+        <div class="col fblack text-center" style="font-size: 14px;">
+            <i class="icon-phone"></i>
+            8 (914) 090-55-95
+        </div>
+
+        <div class="col-6 d-flex justify-content-between">
+            <a href="{{ url_for('about.about_page') }}" class="getbtn5 fnormal">О нас</a>
+            <a href="{{ url_for('japan.japan_page') }}" class="getbtn4 fnormal">Авто из Японии</a>
+            <a href="{{ url_for('korea.korea_page') }}" class="getbtn4 fnormal">Авто из Кореи</a>
+            <a href="{{ url_for('china.china_page') }}" class="getbtn4 fnormal">Авто из Китая</a>
+        </div>
+    </div>
+</div>

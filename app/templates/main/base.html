@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="shortcut icon" href="{{ url_for('static', filename='img/logo2.svg') }}" type="image/x-icon">
+    <link rel="stylesheet" href ="{{ url_for('static', filename='css/libs/bootstrap.min.css') }}">
+    <link rel="stylesheet" href ="{{ url_for('static', filename='css/main.css') }}">
+    <link rel="stylesheet" href ="{{ url_for('static', filename='css/fontello.css') }}">
+
+
+    <title>{% block title %}{% endblock %}</title>
+</head>
+
+<body>
+
+    <div class = "main_wrapper">
+        <header class = "header">{% include 'main/_header.html' %}</header>
+        <main class = "content"> {% block content %}{% endblock %}</main>
+        <footer class="footer">{% include 'main/_footer.html' %}</footer>   
+    </div>
+
+    <script src = "{{ url_for('static', filename='js/libs/bootstrap.bundle.min.js') }}"></script>
+    <script src = "{{ url_for('static', filename='js/app.js') }}"></script>
+</body>
+
+</html>
