@@ -4,10 +4,39 @@
 
 {% block content %}
 
-<div class="container">
+
+<div class="container" id="mheader" style="padding-top: 30px;">
+    <div class="row g-0">
+        <div class="col-4 align-items-center d-flex justify-content-center" style="padding: 0px;">
+            <a href="/">
+                <img class="header__img hmlogo" src="{{ url_for('static', filename='img/logo8.png') }}" alt="logo" style="padding: 0px;">
+            </a>
+        </div>
+        <div class="col-8 align-items-center d-flex justify-content-center" style="padding: 0px;">
+            <div class="row g-0">
+                <div class="col-6 text-center">
+                    <a href="{{ url_for('about.about_page') }}" class="getbtn5 fnormal3 mx-auto" >О нас</a>
+                    <a href="{{ url_for('japan.japan_page') }}" class="getbtn4 fnormal3 mx-auto" >Авто из Японии</a>
+                </div>
+                <div class="col-6 text-center">
+                    <a href="{{ url_for('korea.korea_page') }}" class="getbtn4 fnormal3 mx-auto">Авто из Кореи</a>
+                    <a href="{{ url_for('china.china_page') }}" class="getbtn4 fnormal3 mx-auto">Авто из Китая</a>
+                </div>
+                <div class="col-12 fbold2 text-center" style="font-size: 12px;">
+                    <i class="icon-phone"></i>
+                    8 (914) 090-55-95
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="container" id="top">
     <div class="row" style="padding-top: 50px;">
-        <div class="col-6">         
-            <div class="fblack text-center">
+        <div class="col-xl-6 col-12">         
+            <div class="fblack text-center" id="mblack">
                 Импортируем автомобили прямо из <span style="color: #00756c;">Южной Кореи -</span> быстро, надёжно, без посредников!
             </div>           
             <div class="fnormal" style="padding-top: 30px; padding-bottom: 40px;">
@@ -16,13 +45,13 @@
                 С нами Вы получаете не только автомобиль Вашей мечты, но и гарантию прозрачности и простоты на каждом этапе сделки. Мы тщательно подходим к проверке каждой машины, чтобы исключить любые возможные непредвиденные расходы и сюрпризы. Выбирая AutoTradeService, Вы выбираете уверенность в своём будущем автомобиле и комфорт на всём пути от идеи до реализации.
             </div>
             <div>
-                <a href="#koreaforma" class="getbtn2">
-                    <i class="icon-hand-pointer-o btn-icon"></i>
+                <a href="#koreaforma" class="getbtn2" id="cen-btn">
+                    <i class="icon-hand-pointer-o btn-icon" id="ic-cen"></i>
                     Заказать авто
                 </a>
             </div>
         </div>
-        <div class="col-6 d-flex align-items-center" style="padding: 0px;">
+        <div class="col-xl-6 col-12 d-flex align-items-center" style="padding: 0px;">
             <img src="{{ url_for('static', filename='img/M8.png') }}" class="img-fluid mx-auto" alt="Автомобили">
         </div>      
     </div>
@@ -45,7 +74,7 @@
 
 <div class="container">
     <div class="row g-3">
-        <div class="col-4">
+        <div class="col-xl-4 col-12">
             <div class="custom-card1" style="height: 160px;">
                 <p class="fbold2 card-title">Честные пробеги</p>
                 <div class="card-body1">
@@ -75,7 +104,7 @@
             </div>
             
         </div>
-        <div class="col-4">
+        <div class="col-xl-4 col-12">
             <div class="custom-card1" style="height: 160px;">
                 <p class="fbold2 card-title">Первый собственник</p>
                 <div class="card-body1">
@@ -104,7 +133,7 @@
                 </div>
             </div>   
         </div>
-        <div class="col-4">
+        <div class="col-xl-4 col-12">
             <div class="custom-card1" style="height: 160px;">
                 <p class="fbold2 card-title">Быстрая доставка</p>
                 <div class="card-body1">
@@ -152,7 +181,7 @@
 
 <div class="container">
     <div class="row justify-content-center g-0">
-        <div class="col-8">
+        <div class="col-xl-8 col-12">
             <div class="custom-card2">
                 <div class="card-image3">
                     <img src="{{ url_for('static', filename='img/icons8-startup-50.png') }}" class="img-fluid" alt="Автомобили"> 
@@ -237,7 +266,7 @@
 <div class="container" style="margin-bottom: 150px;">
     <div class="row" style="margin-bottom: 20px;">
 
-        <div class="col">
+        <div class="col-xl-3 col-12">
             <div class="step-item" style="border-radius: 25px; height: 400px;">
                 <div class="icon-s3">
                     <i class="icon-lock"></i>
@@ -246,7 +275,7 @@
                 <p class="fnormal" style="padding-top: 20px;">Мы страхуем ваш автомобиль, чтобы защитить его от любых потенциальных неприятностей и проблем, которые могут возникнуть в процессе покупки и эксплуатации.</p>
             </div>
         </div>
-        <div class="col-3">
+        <div class="col-xl-3 col-12">
             <div class="step-item" style="border-radius: 25px; height: 400px;">
                 <div class="icon-s3">
                     <i class="icon-thumbs-up"></i>
@@ -255,7 +284,7 @@
                 <p class="fnormal" style="padding-top: 20px;">Мы берем на себя полную ответственность за возможные риски, начиная с момента покупки автомобиля и заканчивая его безопасной доставкой к вам.</p>
             </div>
         </div>
-        <div class="col">
+        <div class="col-xl-3 col-12">
             <div class="step-item" style="border-radius: 25px; height: 400px;">
                 <div class="icon-s3">
                     <i class="icon-doc"></i>
@@ -265,7 +294,7 @@
                 <p class="fnormal" style="padding-top: 20px;">Предоставляем полное страховое покрытие, которое поможет компенсировать любой ущерб в случае непредвиденных обстоятельств, делая ваш опыт максимально безопасным.</p>
             </div>
         </div>
-        <div class="col">
+        <div class="col-xl-3 col-12">
             <div class="step-item" style="border-radius: 25px; height: 400px;">
                 <div class="icon-s3">
                     <i class="icon-shield"></i>
@@ -277,11 +306,11 @@
     </div>
 
     <div class="row justify-content-center">
-        <div class="col-4">
-            <div class="custom-card1" style="height: 160px; border: none;   -webkit-box-shadow: 0 5px 25px rgba(0, 0, 0, 0.15);
+        <div class="col-xl-4 col-12">
+            <div class="custom-card1" style=" border: none;   -webkit-box-shadow: 0 5px 25px rgba(0, 0, 0, 0.15);
                  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.15);">
                 <p class="fbold2 card-title" style="color: #000; border-bottom: none; font-size: 18px;"><span style="color: #00756c;">ДОГОВОР -</span> ГЛАВНАЯ ГАРАНТИЯ ВАШЕЙ И НАШЕЙ БЕЗОПАСНОСТИ</p>
-                <div class="card-body1">
+                <div class="card-body1" id="dogovor">
                     <a href="static/files/Договор компании Долгов Авто по Японии.pdf" download="Договор компании Долгов Авто по Японии.pdf" class="getbtn6">
                         <i class="icon-download-1 btn-icon" style="color: #00756c; margin-right: 27px;"></i>
                         Пример договора
@@ -300,13 +329,13 @@
 
 <div class="bgakorea" id="koreaforma">
     <div class="container">
-        <div class="row">
-            <div class="col-3">
+        <div class="row" id="mforma">
+            <div class="col-xl-3 col-12">
                 <form action="{{ url_for('main.send_email') }}" method="post" class="contact-form text-center">
-                    <p class="text-center fbold" style="font-size: 24px;">
+                    <p class="text-center fbold3" id="forz">
                         ОСТАЛИСЬ ВОПРОСЫ?
                     </p>
-                    <p class="text-center fnormal" style="font-size: 18px;">
+                    <p class="text-center fnormal4" id="fort">
                         Оставьте свои данные и наш менеджер свяжется с вами ближайшее время!
                     </p>
                     <div class="form-group">
@@ -343,11 +372,11 @@
 
 <div class="container">
     <div class="row justify-content-center align-items-center" style="padding-top: 150px;">
-        <div class="col-8 d-flex align-items-center" style="padding: 0px;">
+        <div class="col-xl-8 col-12 d-flex align-items-center" style="padding: 0px;">
             <img src="{{ url_for('static', filename='img/Group 10.png') }}" class="img-fluid mx-auto" alt="соц">
         </div>  
 
-        <div class="col-4 fblack" style="padding-left: 50px; font-size: 28px; padding-right: 0px;">
+        <div class="col-xl-4 col-12 fblack iformastr"  id="mformastr">
             <span style="color: #00756c;">Подпишись,</span> чтобы
             не пропустить новинки
             и выгодные предложения
@@ -357,9 +386,8 @@
                     <img src="{{ url_for('static', filename='img/icons8-телеграмма-app-100.png') }}" class="img-fluid" alt="Автомобили"> 
                 </div>
                 <div class="btn-body2">
-                    <h5 class="fbold2">Наш телеграм-канал</h5>
+                    <h5 class="fbold2">Наш телеграм-канал <i class="icon-link"></i></h5> 
                     <p class="fnormal2" style="margin-bottom: 0px;">Новости, покупки, полезная информация</p>
-                    <i class="icon-link" style="padding-left: 250px; padding-bottom: 10px; padding-right: 10px; color: #000;"></i>
                 </div>
             </a>
             <a href="" class="custom-btn2"> 
@@ -367,9 +395,8 @@
                     <img src="{{ url_for('static', filename='img/icons8-youtube-100.png') }}" class="img-fluid" alt="Автомобили"> 
                 </div>
                 <div class="btn-body2">
-                    <h5 class="fbold2">Наш ютуб-канал</h5>
+                    <h5 class="fbold2">Наш ютуб-канал <i class="icon-link"></i></h5>
                     <p class="fnormal2" style="margin-bottom: 0px;">Обзоры на импортные автомобили</p>
-                    <i class="icon-link" style="padding-left: 250px; padding-bottom: 10px; padding-right: 10px; color: #000;"></i>
                 </div>
             </a>
             <a href="" class="custom-btn2"> 
@@ -377,9 +404,8 @@
                     <img src="{{ url_for('static', filename='img/icons8-группа-пользователей,-женщины-100.png') }}" class="img-fluid" alt="Автомобили"> 
                 </div>
                 <div class="btn-body2">
-                    <h5 class="fbold2">Отзывы наших клиентов</h5>
+                    <h5 class="fbold2">Отзывы наших клиентов <i class="icon-link"></i></h5>
                     <p class="fnormal2" style="margin-bottom: 0px;">Отзывы клиентов на оказание наших услуг</p>
-                    <i class="icon-link" style="padding-left: 250px; padding-bottom: 10px; padding-right: 10px; color: #000;"></i>
                 </div>
             </a>
         </div>

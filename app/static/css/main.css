@@ -8,16 +8,34 @@
 
 
 
-html {
-    height: 100%;
+
+.main_wrapper {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    width: 100vw; 
+    max-width: 100%;
 }
 
 
-body{
+.content {
+    flex: 1 1 auto;
+    width: 100%; 
+    max-width: 100%;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
     background: #f0f0f0;
     color: #000000;
-    height: 100%;
-}
+    overflow-x: hidden;
+} 
+
+
 
 
 
@@ -35,20 +53,8 @@ body{
 
 .header__img  {
     display: block;
-    width: 150px;
-    height: 100px;
-}
-
-
-
-.content {
-    flex: 1 1 auto;
-}
-
-.main_wrapper{
-    min-height: 100%;
-    display: flex;
-    flex-direction: column;
+    width: 140px;
+    height: 140px;
 }
 
 
@@ -236,7 +242,7 @@ body{
     width: 105px;
     height: 105px;
     border-radius: 50%;
-    border: 15px solid white; 
+    border: 15px solid transparent; 
     box-sizing: border-box;
     z-index: 1; 
 }
@@ -258,7 +264,7 @@ body{
     font-size: 24px; 
     color: #fff;
     z-index: 3; 
-}
+} 
 
 
 
@@ -518,43 +524,6 @@ button {
 
 
 
-
-
-
-/* .lol {
-    flex-direction: column;
-}
-
-.custom-card1 {
-    border: 1px solid #c4dade;
-    border-radius: 25px;
-    background-color: #fff;
-    height: 150px;
-    margin-bottom: 15px;
-}
-
-
-
-.card-image2 {
-    width: 100%; 
-    height: 100%; 
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: none;
-    border-radius: 25px;
-}
-
-.card-body1 {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-} */
-
-
-
-
 .custom-card1 {
     border: 1px solid #c4dade;
     border-radius: 25px;
@@ -566,6 +535,7 @@ button {
     padding: 15px;
     margin-bottom: 15px;
     box-sizing: border-box;
+    height: 160px;
 }
 
 .card-title {
@@ -584,7 +554,7 @@ button {
     align-items: center;
     justify-content: center;
     width: 100%;
-    flex-grow: 1; /* Заставляет этот блок занимать доступное пространство */
+    flex-grow: 1;
 }
 
 .card-image2 {
@@ -730,10 +700,11 @@ button {
     display: flex;
     flex-direction: column;
     justify-content: flex-start; 
+    justify-content: center;
     width: 100%;
     padding-left: 15px;
     color: #000;
-    padding-top: 10px;
+    height: 100px;
 }
 
 
@@ -782,7 +753,7 @@ footer {
 .footer-logo {
     width: 180px;
     height: 180px;
-    background-color: #f0f0f0;
+    background-color: #fff;
     border-radius: 25px;
 }
 
@@ -834,8 +805,8 @@ p {
 
 .social-icons a {
     color: #fff;
-    font-size: 24px;
-    margin-right: 8px;
+    font-size: 22px;
+    margin-right: 6px;
 }
 
 .social-icons a:hover {
@@ -890,3 +861,456 @@ color: #00756c;
 .aboutphoto {
     border-radius: 6px;
 }
+
+.fnormal3{
+    font-family: GothamPro, sans-serif;
+    font-weight: 400;
+    font-size: 10px;
+}
+
+.fnormal4{
+    font-family: GothamPro, sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.fbold3{
+    font-family: GothamPro, sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+}
+
+
+
+.iformastr {
+    padding-left: 50px;
+    font-size: 28px;
+    padding-right: 0px;
+}
+
+
+
+.pad15 {
+    padding-top: 15px;
+    font-size: 12px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#header-buttons {
+    display: flex;
+}
+
+
+@media (max-width: 768px) {
+    .header {
+        display: none;
+    }
+}
+
+
+
+
+
+#mheader {
+    display: none;
+}
+
+
+
+@media (max-width: 768px) {
+    #mheader {
+        display: block;
+        padding-top: 12px;      
+    }
+}
+
+
+
+
+@media (max-width: 768px) {
+    .hmlogo {
+        background-color: #fff;
+        width: 100px;
+        height: 100px;
+        border-radius: 12px;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+       
+    }
+}
+
+
+
+@media (max-width: 768px) {
+    .getbtn4 {
+        width: 103px;
+        height: 35px;
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .getbtn5 {
+        width: 103px;
+        height: 35px;
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+}
+
+
+
+@media (max-width: 768px) {
+    .fnormal {
+       font-size: 12px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    #mblack {
+       font-size: 24px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .container {
+       padding-left: 30px;
+       padding-right: 30px;
+    }
+}
+
+
+
+@media (max-width: 768px) {
+    .list-group-item {
+        padding: 10px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .icon-s1 {
+        font-size: 20px;
+        padding: 6px;
+        margin-right: 10px; 
+    }
+}
+
+
+
+@media (max-width: 768px) {
+    #cen-btn {
+        font-family: GothamPro, sans-serif;
+        font-weight: 400;
+        font-size: 12px;
+        padding: 12px 12px;
+        justify-content: center;
+        display: flex;
+        align-content: center;
+        width: 150px;
+        margin: auto;
+        margin-bottom: 50px;
+    }
+}
+
+@media (max-width: 768px) {
+    #ic-cen {
+        font-size: 14px;
+        margin-right: 5px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .thema {
+        font-size: 16px;
+        padding-top: 100px;
+        padding-bottom: 35px;
+        margin-bottom: 0px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .thema i {
+        font-size: 16px;
+        padding-top: 100px;
+        padding-bottom: 35px;
+    }
+}
+
+@media (max-width: 768px) {
+    #cen-btn2 {
+        font-family: GothamPro, sans-serif;
+        font-weight: 400;
+        font-size: 12px;
+        padding: 12px 12px;
+        justify-content: center;
+        display: flex;
+        align-content: center;
+        width: 200px;
+        margin: auto;
+        margin-bottom: 50px;
+    }
+}
+
+@media (max-width: 768px) {
+    #gp1 {
+        font-size: 14px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    #gp2 {
+        font-size: 8px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .step-item {
+        height: 275px;
+        padding: 20px;
+        margin-bottom: 30px;
+        width: auto;
+        margin-top: 0px;
+        
+    }
+}
+
+
+
+@media (max-width: 768px) {
+    .step-item h5 {
+        font-size: 16px;
+        margin-top: 10px;
+        margin-bottom: 0px;
+        
+    }
+}
+
+
+@media (max-width: 768px) {
+    #text1 {
+        font-size: 20px; 
+    }
+}
+
+
+@media (max-width: 768px) {
+    .card-country {
+        margin-bottom: 30px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    #mforma {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .contact-form {
+        width: 300px;
+        height: 540px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    #forz {
+      font-size: 18px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    #fort {
+      font-size: 12px;
+    }
+}
+
+@media (max-width: 768px) {
+    .custom-card {
+        margin-bottom: 15px;
+        height: 225px;
+    }
+}
+
+@media (max-width: 768px) {
+    #mformastr{
+        padding: 15px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    #mformastr {
+        padding-top: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    #IP {
+        display: none;
+    }
+}
+
+
+@media (max-width: 768px) {
+    #IP2 {
+        display: block;
+    }
+}
+
+@media (min-width: 768px) {
+    #IP2 {
+        display: none;
+    }
+}
+
+
+
+
+@media (max-width: 768px) {
+    .custom-card1 {
+        height: 240px;
+    }
+}
+
+@media (max-width: 768px) {
+    .custom-card1:last-child {
+        margin-bottom: 0px;
+    }
+}
+
+@media (max-width: 768px) {
+    .card-body2 {
+        padding-left: 0px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .card-body2 h5 {
+        font-size: 18px;
+    }
+}
+
+
+
+
+
+
+@media (max-width: 768px) {
+    .step-item2 {
+        height:200px;
+        width: 95%;
+        padding: 5px;
+        padding-top: 10px;
+    }
+}
+
+
+
+@media (max-width: 768px) {
+    .step-item2 p {
+        font-size: 11px;
+        margin: auto;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .step-item2 h5 {
+        font-size: 18px;
+        margin: 0px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    #ics2 {
+        width: 50px; 
+        height: 50px;
+    }
+}
+
+
+
+@media (max-width: 768px) {
+    #zvezda {
+        padding: 0px;
+        font-size: 10px;
+        padding-bottom: 25px;
+       
+    }
+}
+
+@media (max-width: 768px) {
+    .footer-logo {
+        width: 149px;
+        height: 149px;   
+    }
+}
+
+
+@media (max-width: 768px) {
+    #dogovor{
+        height: 200px;
+    }
+}
+
+
+
+

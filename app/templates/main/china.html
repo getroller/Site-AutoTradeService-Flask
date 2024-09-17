@@ -3,10 +3,37 @@
 {% block title %}Авто из Китая{% endblock %}
 
 {% block content %}
-<div class="container">
+
+<div class="container" id="mheader" style="padding-top: 30px;">
+    <div class="row g-0">
+        <div class="col-4 align-items-center d-flex justify-content-center" style="padding: 0px;">
+            <a href="/">
+                <img class="header__img hmlogo" src="{{ url_for('static', filename='img/logo8.png') }}" alt="logo" style="padding: 0px;">
+            </a>
+        </div>
+        <div class="col-8 align-items-center d-flex justify-content-center" style="padding: 0px;">
+            <div class="row g-0">
+                <div class="col-6 text-center">
+                    <a href="{{ url_for('about.about_page') }}" class="getbtn5 fnormal3 mx-auto" >О нас</a>
+                    <a href="{{ url_for('japan.japan_page') }}" class="getbtn4 fnormal3 mx-auto" >Авто из Японии</a>
+                </div>
+                <div class="col-6 text-center">
+                    <a href="{{ url_for('korea.korea_page') }}" class="getbtn4 fnormal3 mx-auto">Авто из Кореи</a>
+                    <a href="{{ url_for('china.china_page') }}" class="getbtn4 fnormal3 mx-auto">Авто из Китая</a>
+                </div>
+                <div class="col-12 fbold2 text-center" style="font-size: 12px;">
+                    <i class="icon-phone"></i>
+                    8 (914) 090-55-95
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container" id="top">
     <div class="row" style="padding-top: 50px;">
-        <div class="col-6">         
-            <div class="fblack text-center">
+        <div class="col-xl-6 col-12">         
+            <div class="fblack text-center" id="mblack">
                 Привезём любое авто напрямую из <span style="color: #00756c;">Китая</span> без посредников!
             </div>           
             <div class="fnormal" style="padding-top: 30px; padding-bottom: 40px;">
@@ -15,13 +42,13 @@
                 Мы берем на себя весь процесс: от профессиональной оценки состояния автомобиля в Китае до полного таможенного оформления и транспортировки. Наша команда уделяет внимание каждой детали, гарантируя надежность и прозрачность на каждом этапе. Выбирая нас, Вы получаете автомобиль, который полностью отвечает Вашим требованиям, по оптимальной цене и в кратчайшие сроки.
             </div>
             <div>
-                <a href="#chinaforma" class="getbtn2">
-                    <i class="icon-hand-pointer-o btn-icon"></i>
+                <a href="#chinaforma" class="getbtn2" id="cen-btn">
+                    <i class="icon-hand-pointer-o btn-icon" id="ic-cen"></i>
                     Заказать авто
                 </a>
             </div>
         </div>
-        <div class="col-6 d-flex align-items-center" style="padding: 0px;">
+        <div class="col-xl-6 col-12 d-flex align-items-center" style="padding: 0px;">
             <img src="{{ url_for('static', filename='img/geelmon.png') }}" class="img-fluid mx-auto" alt="Автомобили">
         </div>      
     </div>
@@ -39,68 +66,69 @@
 
 <div class="container">
     <div class="row g-3">
-        <div class="col-4">  
+        <div class="col-xl-4 col-12"> 
             <div class="custom-card1" style="height: 200px;">
-                <p class="fbold2 card-title">Безопасность</p>
-                <div class="card-body1">
-                    <div class="card-image2">
-                        <img src="{{ url_for('static', filename='img/icons8-безопасность-проверена-64.png') }}" class="img-fluid" alt="Автомобили">
-                    </div>
-                    <p class="fnormal card-text">Полная ответственность за автомобиль и защита покупателя по договору.</p>
-                </div>
-            </div>
-            <div class="custom-card1" style="height: 200px;">
-                <p class="fbold2 card-title">Технологии</p>
+                <p class="fbold2 card-title">Современные технологии</p>
                 <div class="card-body1">
                     <div class="card-image2">
                         <img src="{{ url_for('static', filename='img/icons8-технологии-100.png') }}" class="img-fluid" alt="Автомобили">
                     </div>
-                    <p class="fnormal card-text">Китайские автомобили не уступают по оснащению и технологиям европейским моделям, часто имеют современные системы безопасности, мультимедиа, комфорта и передовые электронные помощники.</p>
+                    <p class="fnormal card-text">Китайские автомобили оснащены новейшими системами безопасности, мультимедиа и инновационными технологиями, на уровне европейских моделей.</p>
+                </div>
+            </div> 
+            <div class="custom-card1" style="height: 200px;">
+                <p class="fbold2 card-title">Гарантированная безопасность</p>
+                <div class="card-body1">
+                    <div class="card-image2">
+                        <img src="{{ url_for('static', filename='img/icons8-безопасность-проверена-64.png') }}" class="img-fluid" alt="Автомобили">
+                    </div>
+                    <p class="fnormal card-text">Наша компания полностью отвечает за качество и безопасность покупки, закрепляя обязательства в договоре.</p>
                 </div>
             </div>
         </div> 
-        <div class="col-4">
+        <div class="col-xl-4 col-12">
             <div class="custom-card1" style="height: 200px;">
-                <p class="fbold2 card-title">Доставка</p>
-                <div class="card-body1">
-                    <div class="card-image2">
-                        <img src="{{ url_for('static', filename='img/icons8-доставка-100.png') }}" class="img-fluid" alt="Автомобили">
-                    </div>
-                    <p class="fnormal card-text">Возможность доставки автомобиля в любой город России</p>
-                </div>
-            </div>
-            <div class="custom-card1" style="height: 200px;">
-                <p class="fbold2 card-title">Цена</p>
+                <p class="fbold2 card-title">Доступная стоимость</p>
                 <div class="card-body1">
                     <div class="card-image2">
                         <img src="{{ url_for('static', filename='img/icons8-ценник-в-долларах-100.png') }}" class="img-fluid" alt="Автомобили">
                     </div>
-                    <p class="fnormal card-text">Новые китайские автомобили обычно гораздо дешевле, чем аналогичные модели европейских или японских брендов благодаря более низкой себестоимости производства и отсутствию платы за "бренд".</p>
+                    <p class="fnormal card-text">Китайские автомобили выгодно отличаются по цене за счет доступного производства, что делает их более конкурентоспособными.</p>
+                </div>
+            </div>
+            <div class="custom-card1" style="height: 200px;">
+                <p class="fbold2 card-title">Быстрая доставка</p>
+                <div class="card-body1">
+                    <div class="card-image2">
+                        <img src="{{ url_for('static', filename='img/icons8-доставка-100.png') }}" class="img-fluid" alt="Автомобили">
+                    </div>
+                    <p class="fnormal card-text">Осуществляем доставку автомобилей в любой регион России в кратчайшие сроки.</p>
                 </div>
             </div>
         </div> 
-        <div class="col-4">
+        <div class="col-xl-4 col-12">
             <div class="custom-card1" style="height: 200px;">
-                <p class="fbold2 card-title">Европейский стандарт</p>
-                <div class="card-body1">
-                    <div class="card-image2">
-                        <img src="{{ url_for('static', filename='img/icons8-европа-100 (1).png') }}" class="img-fluid" alt="Автомобили">
-                    </div>
-                    <p class="fnormal card-text">Некоторые китайские модели предлагаются с увеличенной колесной базой и уникальным оснащением, а также создаются специальные модели для китайского рынка.</p>
-                </div>
-            </div>
-            <div class="custom-card1" style="height: 200px;">
-                <p class="fbold2 card-title">Большой выбор</p>
+                <p class="fbold2 card-title">Широкий ассортимент</p>
                 <div class="card-body1">
                     <div class="card-image2">
                         <img src="{{ url_for('static', filename='img/icons8-выбор-100.png') }}" class="img-fluid" alt="Автомобили">
                     </div>
-                    <p class="fnormal card-text">Широкий ассортимент автомобилей от компактных городских машин до кроссоверов, внедорожников, электромобилей, пикапов и минивэнов.</p>
+                    <p class="fnormal card-text">Мы предлагаем широкий выбор моделей — от городских компактных авто до мощных внедорожников и электромобилей.</p>
+                </div>
+            </div>
+            <div class="custom-card1" style="height: 200px;">
+                <p class="fbold2 card-title">Европейские стандарты качества</p>
+                <div class="card-body1">
+                    <div class="card-image2">
+                        <img src="{{ url_for('static', filename='img/icons8-европа-100 (1).png') }}" class="img-fluid" alt="Автомобили">
+                    </div>
+                    <p class="fnormal card-text">Многие китайские модели соответствуют европейским стандартам и предлагаются с эксклюзивными опциями для местного рынка.</p>
                 </div>
             </div>
         </div>
     </div>
 </div>
+
 
 
 
@@ -118,14 +146,16 @@
 
 <div class="container">
     <div class="row justify-content-center g-0">
-        <div class="col-8">
+        <div class="col-xl-8 col-12">
             <div class="custom-card2">
                 <div class="card-image3">
                     <img src="{{ url_for('static', filename='img/icons8-startup-50.png') }}" class="img-fluid" alt="Автомобили"> 
                 </div>
                 <div class="card-body2">
-                    <h5 class="fbold" style="padding-top: 15px;">Подбор автомобиля</h5>
-                    <p class="fnormal">Начинаем с подбора автомобиля, который сейчас продается в Китае под ваши параметры. Просчитываем его конечную стоимость в городе Владивосток.</p>
+                    <h5 class="fbold" style="padding-top: 15px;">Оформление заявки</h5>
+                    <p class="fnormal">Оставьте заявку на сайте или свяжитесь с нами через Telegram, WhatsApp или просто по телефону. Наш менеджер проконсультирует Вас по любым вопросам и поможет с выбором подходящего автомобиля из Китая. <br>
+                    <br>    
+                    Мы предложим варианты на основе Ваших предпочтений и произведем расчет стоимости доставки до Владивостока.</p>
                 </div>
             </div>
 
@@ -134,11 +164,11 @@
                     <img src="{{ url_for('static', filename='img/icons8-вниз-48.png') }}" class="img-fluid" alt="Автомобили"> 
                 </div>
                 <div class="card-body2">
-                    <h5 class="fbold" style="padding-top: 15px;">Договор и предоплата</h5>
+                    <h5 class="fbold" style="padding-top: 15px;">Договор и депозит</h5>
                     <p class="fnormal">
-                        После подбора авто заключаем договор. В договоре прописываются все технические данные автомобиля и конечная максимальная стоимость в городе Владивосток с учетом таможенного оформления. <br>
+                        После подбора автомобиля подписываем договор, где указываются все технические характеристики машины и конечная стоимость с учетом доставки и таможенного оформления. <br>
                         <br>
-                        Депозит по договору (100.000 рублей) - обеспечительный платёж. Он будет Вам возвращён на последнем этапе – после подписания акта оказания услуг.
+                        Для закрепления сделки вносится депозит (100 000 рублей), который будет возвращен при окончательном подписании акта выполненных услуг.
                     </p>
                 </div>
             </div>
@@ -148,14 +178,11 @@
                     <img src="{{ url_for('static', filename='img/icons8-вниз-48.png') }}" class="img-fluid" alt="Автомобили"> 
                 </div>
                 <div class="card-body2">
-                    <h5 class="fbold" style="padding-top: 15px;">Покупка</h5>
+                    <h5 class="fbold" style="padding-top: 15px;">Процесс покупки</h5>
                     <p class="fnormal">
-                        Менеджер подбирает варианты и согласует их с Вами. <br>
-                        Время подбора вариантов всегда разное и зависит от распространённости (популярности) а/м.
-                        Если вариант Вам понравился, то менеджер заказывает осмотр а/м у наших партнёров – китайский экспортной компании. <br>
+                        Мы согласовываем с Вами варианты автомобилей. В зависимости от наличия и популярности моделей, процесс может занять разное количество времени. Если автомобиль Вас устраивает, мы заказываем его осмотр у наших партнеров, результаты которого отправляем Вам. <br>
                         <br>
-                        Результаты осмотра (фото) мы направляем в нашу группу.
-                        После Вашего подтверждения, мы бронируем автомобиль, а китайская экспортная компания готовит и выставляет инвойс.   
+                        Результаты осмотра (фото или видео) мы направляем в нашу группу. После Вашего подтверждения, мы бронируем автомобиль, а брокер готовит и выставляет инвойс.
                     </p>
                 </div>
             </div>
@@ -165,12 +192,11 @@
                     <img src="{{ url_for('static', filename='img/icons8-вниз-48.png') }}" class="img-fluid" alt="Автомобили"> 
                 </div>
                 <div class="card-body2">
-                    <h5 class="fbold" style="padding-top: 15px;">Оплата и доставка</h5>
+                    <h5 class="fbold" style="padding-top: 15px;">Оплата и доставка авто</h5>
                     <p class="fnormal">
-                        После того, как мы выбрали нужный автомобиль, его проверили и он Вам понравился, наш менеджер направит Вам инвойс для оплаты. Сумма в инвойсе составляет примерно 60-70% от общей стоимости а/м. После оплаты инвойса денежные средства поступают китайской экспортной компании в течение 10 рабочих дней. <br>
+                        После того, как мы выбрали нужный автомобиль, наш специалист направит Вам инвойс для оплаты. Сумма в инвойсе составляет примерно 60-70% от общей стоимости авто. После оплаты счета денежные средства поступают экспортной компании в течение 10 рабочих дней. <br>
                         <br>
-                        Транспортировка а/м по Китаю до стоянки экспортной компании в приграничном городе Суйфэньхэ осуществляется на автовозе и занимает до 10 дней.
-                        После размещения Вашего а/м на стоянке в г. Суйфэньхе за следующие 10 дней экспортная компания подготовит экспортные документы и фото-видео отчёт по машине.
+                        После поступления денежных средств, экспортная компания транспортирует автомобиль до стоянки, делает фото-видео отчёт по машине. И готовит экспортные документы к отправке в г. Владивосток. По прибытию автомобиля во Владивосток, Вам остается только оплатить таможенную пошлину и таможенное оформление.
                     </p>
                 </div>
             </div>
@@ -180,9 +206,9 @@
                     <img src="{{ url_for('static', filename='img/icons8-финишный-флажок-64.png') }}" class="img-fluid" alt="Автомобили"> 
                 </div>
                 <div class="card-body2">
-                    <h5 class="fbold" style="padding-top: 15px;">Выдача</h5>
+                    <h5 class="fbold" style="padding-top: 15px;">Вручение автомобиля</h5>
                     <p class="fnormal">
-                        Завершающим этапом, мы отправим ваш автомобиль автовозом в ближайший к вам филиал "Долгов Авто" или непосредственно в ваш город"
+                        Завершающим этапом, мы отправим Ваш автомобиль автовозом или ЖД непосредственно в ваш город.
                     </p>
                 </div>
             </div>
@@ -206,7 +232,7 @@
 <div class="container" style="margin-bottom: 150px;">
     <div class="row" style="margin-bottom: 20px;">
 
-        <div class="col">
+        <div class="col-xl-3 col-12">
             <div class="step-item" style="border-radius: 25px; height: 400px;">
                 <div class="icon-s3">
                     <i class="icon-lock"></i>
@@ -215,7 +241,7 @@
                 <p class="fnormal" style="padding-top: 20px;">Мы страхуем ваш автомобиль, чтобы защитить его от любых потенциальных неприятностей и проблем, которые могут возникнуть в процессе покупки и эксплуатации.</p>
             </div>
         </div>
-        <div class="col-3">
+        <div class="col-xl-3 col-12">
             <div class="step-item" style="border-radius: 25px; height: 400px;">
                 <div class="icon-s3">
                     <i class="icon-thumbs-up"></i>
@@ -224,7 +250,7 @@
                 <p class="fnormal" style="padding-top: 20px;">Мы берем на себя полную ответственность за возможные риски, начиная с момента покупки автомобиля и заканчивая его безопасной доставкой к вам.</p>
             </div>
         </div>
-        <div class="col">
+        <div class="col-xl-3 col-12">
             <div class="step-item" style="border-radius: 25px; height: 400px;">
                 <div class="icon-s3">
                     <i class="icon-doc"></i>
@@ -234,7 +260,7 @@
                 <p class="fnormal" style="padding-top: 20px;">Предоставляем полное страховое покрытие, которое поможет компенсировать любой ущерб в случае непредвиденных обстоятельств, делая ваш опыт максимально безопасным.</p>
             </div>
         </div>
-        <div class="col">
+        <div class="col-xl-3 col-12">
             <div class="step-item" style="border-radius: 25px; height: 400px;">
                 <div class="icon-s3">
                     <i class="icon-shield"></i>
@@ -246,11 +272,11 @@
     </div>
 
     <div class="row justify-content-center">
-        <div class="col-4">
-            <div class="custom-card1" style="height: 160px; border: none;   -webkit-box-shadow: 0 5px 25px rgba(0, 0, 0, 0.15);
+        <div class="col-xl-4 col-12">
+            <div class="custom-card1" style="border: none;   -webkit-box-shadow: 0 5px 25px rgba(0, 0, 0, 0.15);
                  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.15);">
                 <p class="fbold2 card-title" style="color: #000; border-bottom: none; font-size: 18px;"><span style="color: #00756c;">ДОГОВОР -</span> ГЛАВНАЯ ГАРАНТИЯ ВАШЕЙ И НАШЕЙ БЕЗОПАСНОСТИ</p>
-                <div class="card-body1">
+                <div class="card-body1" id="dogovor">
                     <a href="static/files/Договор компании Долгов Авто по Японии.pdf" download="Договор компании Долгов Авто по Японии.pdf" class="getbtn6">
                         <i class="icon-download-1 btn-icon" style="color: #00756c; margin-right: 27px;"></i>
                         Пример договора
@@ -266,12 +292,12 @@
 <div class="bgachina" id="chinaforma">
     <div class="container">
         <div class="row">
-            <div class="col-3">
+            <div class="col-xl-3 col-12" id="mforma">
                 <form action="{{ url_for('main.send_email') }}" method="post" class="contact-form text-center">
-                    <p class="text-center fbold" style="font-size: 24px;">
+                    <p class="text-center fbold3" id="forz">
                         ОСТАЛИСЬ ВОПРОСЫ?
                     </p>
-                    <p class="text-center fnormal" style="font-size: 18px;">
+                    <p class="text-center fnormal4" id="fort">
                         Оставьте свои данные и наш менеджер свяжется с вами ближайшее время!
                     </p>
                     <div class="form-group">
@@ -308,11 +334,11 @@
 
 <div class="container">
     <div class="row justify-content-center align-items-center" style="padding-top: 150px;">
-        <div class="col-8 d-flex align-items-center" style="padding: 0px;">
+        <div class="col-xl-8 col-12 d-flex align-items-center" style="padding: 0px;">
             <img src="{{ url_for('static', filename='img/Group 10.png') }}" class="img-fluid mx-auto" alt="соц">
         </div>  
 
-        <div class="col-4 fblack" style="padding-left: 50px; font-size: 28px; padding-right: 0px;">
+        <div class="col-xl-4 col-12 fblack iformastr"  id="mformastr">
             <span style="color: #00756c;">Подпишись,</span> чтобы
             не пропустить новинки
             и выгодные предложения
@@ -322,9 +348,8 @@
                     <img src="{{ url_for('static', filename='img/icons8-телеграмма-app-100.png') }}" class="img-fluid" alt="Автомобили"> 
                 </div>
                 <div class="btn-body2">
-                    <h5 class="fbold2">Наш телеграм-канал</h5>
+                    <h5 class="fbold2">Наш телеграм-канал <i class="icon-link"></i></h5> 
                     <p class="fnormal2" style="margin-bottom: 0px;">Новости, покупки, полезная информация</p>
-                    <i class="icon-link" style="padding-left: 250px; padding-bottom: 10px; padding-right: 10px; color: #000;"></i>
                 </div>
             </a>
             <a href="" class="custom-btn2"> 
@@ -332,9 +357,8 @@
                     <img src="{{ url_for('static', filename='img/icons8-youtube-100.png') }}" class="img-fluid" alt="Автомобили"> 
                 </div>
                 <div class="btn-body2">
-                    <h5 class="fbold2">Наш ютуб-канал</h5>
+                    <h5 class="fbold2">Наш ютуб-канал <i class="icon-link"></i></h5>
                     <p class="fnormal2" style="margin-bottom: 0px;">Обзоры на импортные автомобили</p>
-                    <i class="icon-link" style="padding-left: 250px; padding-bottom: 10px; padding-right: 10px; color: #000;"></i>
                 </div>
             </a>
             <a href="" class="custom-btn2"> 
@@ -342,9 +366,8 @@
                     <img src="{{ url_for('static', filename='img/icons8-группа-пользователей,-женщины-100.png') }}" class="img-fluid" alt="Автомобили"> 
                 </div>
                 <div class="btn-body2">
-                    <h5 class="fbold2">Отзывы наших клиентов</h5>
+                    <h5 class="fbold2">Отзывы наших клиентов <i class="icon-link"></i></h5>
                     <p class="fnormal2" style="margin-bottom: 0px;">Отзывы клиентов на оказание наших услуг</p>
-                    <i class="icon-link" style="padding-left: 250px; padding-bottom: 10px; padding-right: 10px; color: #000;"></i>
                 </div>
             </a>
         </div>

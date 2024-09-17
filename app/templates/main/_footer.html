@@ -5,9 +5,9 @@
 
 
       <!-- Логотип и название компании -->
-      <div class="col-3">
-        <img class="footer-logo" src="{{ url_for('static', filename='img/logo2.svg') }}" alt="logo">
-        <p class="fnormal2" style="padding-top: 25px;">ИП Овчаренко Александр Александрович<br>
+      <div class="col-xl-3 col-6">
+        <img class="footer-logo" src="{{ url_for('static', filename='img/logo8.png') }}" alt="logo">
+        <p class="fnormal2" style="padding-top: 25px;" id="IP">ИП Овчаренко Александр Александрович<br>
           690037, г. Владивосток, ул. Адмирала Кузнецова, 52Б, стр. 3 ОГРН 332353600060117 ИНН 252415003151
         </p>
       </div>
@@ -17,7 +17,7 @@
 
 
       <!-- Меню навигации -->
-      <div class="col-3 fnormal">
+      <div class="col-xl-3 fnormal col-6">
         <div class="footer-menu">
           <p><a href="{{ url_for('main.index') }}">Главная</a></p>
           <p><a href="{{ url_for('about.about_page') }}">О нас</a></p>
@@ -30,7 +30,7 @@
 
 
       <!-- Контактная информация -->
-      <div class="col-3 fnormal">
+      <div class="col-xl-3 fnormal col-6">
 
         <button id="showForm" class="back-to-top">Перезвоните мне</button>
         <div id="contactForm" class="contact-form-container1">
@@ -87,11 +87,15 @@
 
 
       <!-- Кнопка вверх и иконки соцсетей -->
-      <div class="col-3">
-          <a href="#" class="back-to-top fnormal" style="text-decoration: none; display: flex; width: 130px;">
-            Наверх
-            <i class="icon-up-open-big" style="padding-left: 15px;"></i>
-          </a>
+      <div class="col-xl-3 col-6">
+        <a href="#top" class="back-to-top fnormal back-to-header" style="text-decoration: none; display: flex; width: 130px;">
+          Наверх
+          <i class="icon-up-open-big" style="padding-left: 15px;"></i>
+       </a>
+      
+          <p class="fnormal2" style="padding-top: 25px;" id="IP2">ИП Овчаренко Александр Александрович<br>
+            690037, г. Владивосток, ул. Адмирала Кузнецова, 52Б, стр. 3 ОГРН 332353600060117 ИНН 252415003151
+          </p>
       </div>
     </div>
   </div>
